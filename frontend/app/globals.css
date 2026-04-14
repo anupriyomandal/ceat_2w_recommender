@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: #ffffff;
+  color: #111111;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #d0d0d0;
+  border-radius: 2px;
+}
+
+/* Markdown inside AI bubbles */
+.prose-chat p {
+  margin-bottom: 0.5rem;
+  line-height: 1.65;
+}
+.prose-chat p:last-child {
+  margin-bottom: 0;
+}
+.prose-chat ul,
+.prose-chat ol {
+  padding-left: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+.prose-chat li {
+  margin-bottom: 0.25rem;
+  line-height: 1.6;
+}
+.prose-chat strong {
+  color: #000000;
+  font-weight: 650;
+}
+.prose-chat code {
+  font-family: "SF Mono", "Fira Code", monospace;
+  background: #eeeeee;
+  padding: 0.1em 0.35em;
+  border-radius: 3px;
+  font-size: 0.85em;
+}
+.prose-chat h1,
+.prose-chat h2,
+.prose-chat h3 {
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  margin-top: 0.75rem;
+  color: #111;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
