@@ -288,7 +288,7 @@ export default function Home() {
             marginTop: 10,
           }}
         >
-          Powered by CEAT Tyres · AI recommendations may vary
+          Made by Anupriyo Mandal
         </p>
       </footer>
 
