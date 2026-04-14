@@ -6,9 +6,9 @@ import re
 import pandas as pd
 from typing import List, Dict, Tuple
 
-# Default path relative to project root
+# Default path: backend/data/ (works both locally and on Railway)
 DEFAULT_DATA_PATH = os.path.join(
-    os.path.dirname(__file__), "..", "..", "Data",
+    os.path.dirname(__file__), "..", "data",
     "mcy-vehicle-sku-mapping-v18-14.04.2026.xlsx"
 )
 
